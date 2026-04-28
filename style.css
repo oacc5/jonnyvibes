@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* NAV */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: rgba(0,0,0,0.6);
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: #1db954;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* SECTIONS */
+.bio, .music, .contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.bio p {
+  max-width: 600px;
+  margin: auto;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* MUSIC */
+audio {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.tracks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.track {
+  background: #111;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.track:hover {
+  background: #1db954;
+  color: black;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .tracks {
+    flex-direction: column;
+  }
+}.music {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.playlist {
+  max-width: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.song {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.song span {
+  color: #1db954;
+  font-weight: bold;
+}
+
+.song:hover {
+  background: #1db954;
+  color: black;
+  transform: scale(1.03);
+}

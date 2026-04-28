@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JONNY VIBES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<header>
+  <h2 class="logo">JONNY VIBES</h2>
+
+  <nav>
+    <a href="#bio">Bio</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>JONNY VIBES</h1>
+    <p>Sound of emotion. Rhythm of life.</p>
+    <a href="#music" class="btn">Listen Now</a>
+  </div>
+</section>
+
+<!-- BIO -->
+<section id="bio" class="bio">
+  <h2>Artist Bio</h2>
+  <p>
+    Jonny Vibes is a rising artist blending soulful melodies with modern rhythm.
+    His sound reflects real emotions, street energy, and pure creativity.
+    Every track tells a story — every beat hits differently.
+  </p>
+</section>
+
+<!-- MUSIC -->
+<section id="music" class="music">
+  <h2>Music Playlist</h2>
+
+  <!-- AUDIO PLAYER -->
+  <audio id="player" controls></audio>
+
+  <!-- SONG LIST -->
+  <div class="playlist">
+
+    <div class="song" onclick="playSong(0)">
+      <span>1.</span> Halima Girl
+    </div>
+
+    <div class="song" onclick="playSong(1)">
+      <span>2.</span> Confidence
+    </div>
+
+    <div class="song" onclick="playSong(2)">
+      <span>3.</span> Poverty
+    </div>
+
+    <div class="song" onclick="playSong(3)">
+      <span>4.</span> Igbo
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact / Booking</h2>
+  <p>Email: jonnyvibes@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 JONNY VIBES</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
